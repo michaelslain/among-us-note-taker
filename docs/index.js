@@ -16,7 +16,7 @@ class Character {
         this.element.classList.add('character')
         this.element.classList.add(this.color)
         this.element.style.transition = 'width 0.1s ease-in-out'
-        this.element.src = `./images/${this.color}-character.svg`
+        this.element.src = `../docs/images/${this.color}-character.svg`
 
         this.element.style.left = x + 'px'
         this.element.style.top = y + 'px'
@@ -142,7 +142,7 @@ function updateTrashMenu() {
         .forEach(color => {
             const element = document.createElement('img')
             characterContainer.appendChild(element)
-            element.src = `./images/${color.color}-character.svg`
+            element.src = `../docs/images/${color.color}-character.svg`
             element.classList.add('trash-character')
 
             element.addEventListener('click', () => {
